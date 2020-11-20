@@ -11,9 +11,18 @@
 const firstNumber = 10;
 const secondNumber = 20;
 
-const summation = (a=0,b=0) => a+b;
-const subtraction = (a=0,b=0) => a-b;
+const summation = (a=0,b=0) => {
+    console.log('summation: ' + a + ' + ' + b + ' = ' + (a + b));
+    return a + b;
+}
 
-console.log(firstNumber + ' + ' + secondNumber + ' = ' + summation(firstNumber,secondNumber));
-console.log(firstNumber + ' - ' + secondNumber + ' = ' + subtraction(firstNumber,secondNumber));
+const subtraction = (a=0,b=0) => {
+    console.log('subtraction: ' + a + ' + ' + b + ' = ' + (a - b));
+    return a - b;
+}
 
+
+//const subtraction = (a=0,b=0) => a-b;
+
+summation(firstNumber,secondNumber);
+subtraction(firstNumber,secondNumber);

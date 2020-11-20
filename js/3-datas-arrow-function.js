@@ -13,13 +13,14 @@
 
 'use strict';
 
+
+const personDataLog = ({ object = { firstname: 'John', lastname: 'Doe', age: 33 } } = {}) => {
+    console.log('My name is ' + object.firstname + ' ' + object.lastname + ". I'm " + object.age + ' years old.');
+}
+
 const personalDatas = {
     firstname: 'Jack',
-    lastname: 'Smith',
     age: 42
 };
 
-const personDataLog = (datas = { firstname: 'John', lastname: 'Doe', age: '33' }) => {
-    console.log('My name is ' + personalDatas.firstname + ' ' + personalDatas.lastname + ". I'm " + personalDatas.age + ' years old.');
-}
 personDataLog(personalDatas);
